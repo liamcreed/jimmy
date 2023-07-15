@@ -1,0 +1,95 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 15vh;
+    background-color: rgb(220, 220, 220);
+
+}
+
+.container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 10vh;
+
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+    background-color: rgb(255, 255, 255);
+}
+
+.logo {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    text-align: center;
+    font-size: 15vh;
+    /* outline: 1px solid rebeccapurple; */
+}
+
+
+
+.floor
+{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.wall
+{
+    position: absolute;
+    bottom: 25%;
+    height: 2.5%;
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+}
+.wood
+{
+    position: absolute;
+    bottom: 10%;
+    height: 15%;
+    width: 100%;
+    background-color: rgb(240, 200, 148);
+}
+.ground
+{
+    position: absolute;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(57, 52, 45);
+}
+
+
+.gallery
+{
+    position: absolute;
+    width: 100%;
+    bottom: 25%;
+    height: 50%;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+/*     border: 1px red solid; */
+    gap: 10vw;
+}
+.gallery_item
+{
+    scroll-snap-align: center;
+    width: 25vw;
+    
+
+}
+.gallery_item img
+{
+
+    border: 10px rgb(87, 87, 87) solid;
+}
