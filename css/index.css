@@ -9,9 +9,24 @@ nav {
     top: 0;
     right: 0;
     left: 0;
-    height: 15vh;
-    background-color: rgb(220, 220, 220);
+    height: 10vh;
+    background-color: rgb(100, 143, 244);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
 
+nav a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3vh;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(143, 167, 188);
 }
 
 .container {
@@ -28,68 +43,84 @@ nav {
 }
 
 .logo {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    text-align: center;
-    font-size: 15vh;
+
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12vw;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    
+ 
+    background-image: url(/resources/mmdp.png); 
+    background-size: 100% auto;
     /* outline: 1px solid rebeccapurple; */
 }
 
 
 
-.floor
-{
-    height: 100vh;
+.floor {
+    height: 90vh;
     background-color: rgb(255, 255, 255);
     position: relative;
 }
-.wall
-{
+
+.wall {
     position: absolute;
-    bottom: 25%;
+    bottom: 15%;
     height: 2.5%;
     width: 100%;
-    background-color: rgb(238, 238, 238);
+    border-top: 1px black solid;
 }
-.wood
-{
+
+.wood {
     position: absolute;
-    bottom: 10%;
+    bottom: 0%;
     height: 15%;
     width: 100%;
     background-color: rgb(240, 200, 148);
+    background: url(/resources/floor.jpg);
+    background-size: 100% 200%;
+    border-top: 1px black solid;
 }
-.ground
-{
-    position: absolute;
-    bottom: 0;
-    height: 10%;
+
+.ground {
+    height: 10vh;
     width: 100%;
     background-color: rgb(57, 52, 45);
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
 }
 
 
-.gallery
-{
+.gallery {
+
+    padding-left: 5%;
+    padding-right: 5%;
     position: absolute;
-    width: 100%;
-    bottom: 25%;
-    height: 50%;
+    width: 90%;
+    height: 82.5%;
     display: flex;
     overflow: scroll;
     scroll-snap-type: x mandatory;
-/*     border: 1px red solid; */
-    gap: 10vw;
+    gap: 5%;
+    align-items: center;
+    justify-content: space-between;
 }
-.gallery_item
-{
+
+
+.gallery_item {
     scroll-snap-align: center;
-    width: 25vw;
-    
-
+    height: 50%;
 }
-.gallery_item img
-{
 
-    border: 10px rgb(87, 87, 87) solid;
+.gallery_item img {
+    height: 100%;
+    transition: transform 800ms;
+    box-shadow: 0px 5px 10px rgb(167, 167, 167); 
+}
+.gallery_item img:hover
+{
+    transform: scale(1.05);
 }
